@@ -7,3 +7,4 @@ def importer(name, *args):
         del M.run
     return M
 __builtins__.__dict__['__import__'] = importer
+del importlib
