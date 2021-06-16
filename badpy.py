@@ -1,7 +1,7 @@
 import os
 try:
   os.system("echo 1")
-except:
-  print(1)
+except Exception as err:
+  print("os.system errored with: {}".format(err))
 else:
-  print(0)
+  print("No errors (test.py failed)")
