@@ -6,5 +6,6 @@ def importer(name, *args):
     elif name == 'subprocess':
         del M.run
     return M
-__builtins__['__import__'] = importer
+__builtins__.__dict__['__import__'] = importer
 del importlib
+
