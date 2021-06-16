@@ -1,4 +1,4 @@
-#import test
+import test
 import os
 try:
   os.system("echo \"do bad things\"")
