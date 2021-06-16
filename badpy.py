@@ -1,3 +1,4 @@
+import test
 import os
 try:
   os.system("echo 1")
